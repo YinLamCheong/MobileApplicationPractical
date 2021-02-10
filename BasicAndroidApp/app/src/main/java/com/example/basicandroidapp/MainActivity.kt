@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         println("")
 
         println("You are already ${age}!")
-        println("${age} is the very best age to celebrate!")
+        println("${age} is the very best age to celebrate!!")
     }
 
     fun printBorder(border:String, times:Int) {
