@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         drawerLayout = binding.drawerLayout
 
+
         val navController = this.findNavController(R.id.myNavHostFragment)
         //the back btn
         NavigationUI.setupActionBarWithNavController(this, navController)

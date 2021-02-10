@@ -21,11 +21,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 
 class AboutFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
+        var inflator = inflater.inflate(R.layout.fragment_about,  container, false)
+        //The complete onClickListener with Navigation
+        var playBtn = inflator.findViewById<View>(R.id.playButton1)
+
+        playBtn.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.action_aboutFragment_to_gameFragment2)
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false)
+        return inflator
     }
 }

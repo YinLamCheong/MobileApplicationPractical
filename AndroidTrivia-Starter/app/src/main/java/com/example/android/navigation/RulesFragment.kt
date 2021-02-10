@@ -23,13 +23,31 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.android.navigation.databinding.ActivityMainBinding
 import com.example.android.navigation.databinding.FragmentTitleBinding
 
 class RulesFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
+        var inflator = inflater.inflate(R.layout.fragment_rules,  container, false)
+        //The complete onClickListener with Navigation
+        var playBtn = inflator.findViewById<View>(R.id.playButton1)
+
+        playBtn.setOnClickListener{
+            view?.findNavController()?.navigate(R.id.action_rulesFragment_to_gameFragment2)
+
+            //tutor way:
+            /*
+            activitytt.supportFragmentManager.beginTransaction(){
+                replace(R.id.myFrame, profileFg)
+                addToBackStavk
+                commit()
+
+             */
+            }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rules, container, false)
+        return inflator///inflater.inflate(R.layout.fragment_rules, container, false)
     }
 }
