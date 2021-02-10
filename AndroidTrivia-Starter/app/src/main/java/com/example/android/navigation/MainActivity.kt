@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = binding.drawerLayout
 
         val navController = this.findNavController(R.id.myNavHostFragment)
-        //the back btn or left side option btn?
+        //the back btn
         NavigationUI.setupActionBarWithNavController(this, navController)
         //the drawer nav bar on right side
         NavigationUI.setupWithNavController(binding.navView, navController)
