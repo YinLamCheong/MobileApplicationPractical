@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855458418792",
+    "project_id": "fir-demo-4826f",
+    "storage_bucket": "fir-demo-4826f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855458418792:android:2e3661c4194775de2f6bdd",
+        "android_client_info": {
+          "package_name": "com.example.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855458418792-tss3tu368s0fik3oenlvsppjmjm11qnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBv3P1Cj33iw9FI_05V_EdfQPbNVJ2DLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855458418792-tss3tu368s0fik3oenlvsppjmjm11qnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
